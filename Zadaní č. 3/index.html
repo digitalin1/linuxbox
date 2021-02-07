@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinuxBox ToDo List</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        html {
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 140, 255));
+        }
+        
+        ul,li {
+        width: 150px;
+        cursor: pointer;
+        margin: 5px;    
+        list-style-type: none;
+        }
+        
+        .delete {
+            float: right;
+        }
+
+        .delete {
+            background-color: #078cfa; /* Green */
+            border: none;
+            color: white;
+            padding: 5px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>LinuxBox ToDo List</h1>
+    <input type="text" placeholder="Vepiš položku" id="polozka">
+    <button id="pridejPolozku">add</button>
+    <ul id="uelko">
+    </ul>
+    <script src="app.js"></script>
+</body>
+</html>
